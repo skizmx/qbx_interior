@@ -7,22 +7,12 @@ version '1.1.0'
 
 this_is_a_map 'yes'
 
-shared_scripts {
-	'@ox_lib/init.lua',
-	'@qbx_core/modules/utils.lua'
-}
-
-client_scripts {
-	'client/main.lua',
-	'client/optional.lua'
-}
-
-server_scripts {
-	'server/main.lua',
-	'server/optional.lua'
-}
+shared_script '@ox_lib/init.lua'
+client_script 'client/main.lua'
+server_script 'server/main.lua'
 
 files {
+	'config/interior.lua',
 	'stream/starter_shells_k4mb1.ytyp'
 }
 
